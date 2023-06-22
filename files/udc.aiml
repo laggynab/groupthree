@@ -1,8 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-  <category>
-  <pattern>MY NAME IS *</pattern>
-  <template>Nice to meet you, <star/></template>
-</category>
-
+     <category>
+         <pattern>I want to learn tags</pattern>
+         <template>
+        <think><set name = "topic">tags</set></think>
+        What tag do you want to learn?
+        </template>
+    </category>
+    <category>
+    <pattern>I want to learn algorithm</pattern>
+    <template>
+        <think><set name = "topic">algorithm</set></think>
+        Which algorithm do you want to learn?
+        </template>
+    </category>
+   <topic name="tags">
+       <category>
+          <pattern>
+            That
+         </pattern>
+         <template>
+           That tag is used for reacting.
+            </template>
+       </category>
+   </topic>
+      <topic name="algorithm">
+       <category>
+          <pattern>
+            K-Nearest Neighbours
+         </pattern>
+         <template>
+           It is a supervised learning algorithm
+            </template>
+       </category>
+   </topic>
 </aiml>
